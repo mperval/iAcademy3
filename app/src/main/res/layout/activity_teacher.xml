@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TeacherActivity">
+
+    <LinearLayout
+        android:id="@+id/lyTeacherActivity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitleTeacherActivity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="#0469b3"
+            android:text="Teacher"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvNameTeacher"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Name"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etNameTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Name" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvSurname"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Surname"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etSurnameTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Surname" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Email"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etEmailTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Email" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvDni"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="DNI"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etDniTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="DNI" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Phone"
+                android:textSize="19dp" />
+
+            <EditText
+                android:id="@+id/etPhoneTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="Phone" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Address"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etAddressTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Address" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Username"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etUsernameTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvPassword"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Password"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etPasswordTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/btnAddTeacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#0469b3"
+                    android:text="Add"
+                    android:textColor="@color/white"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/btnBackTeacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#0469b3"
+                    android:text="Back"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btnDeleteTeacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#0469b3"
+                    android:text="Delete"
+                    android:textColor="@color/white"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

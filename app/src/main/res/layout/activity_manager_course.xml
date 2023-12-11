@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CourseManagerActivity">
+
+    <LinearLayout
+        android:id="@+id/lyCourseActivity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvTitleCourseActivity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="#0469b3"
+            android:text="Courses"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Title"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etTitleCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:hint="Title"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Description"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/etDescriptionCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvLevel"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Level"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etLevelCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:hint="Level"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvCapacity"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Capacity"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etCapacityCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:hint="Capacity"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvStartDate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start Date"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etStartDateCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="YYYY-MM-DD"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvEndDate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="End Date"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etEndDateCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="YYYY-MM-DD"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvActivated"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Activated"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/etActivatedCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:hint="True or False"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvUserNameTeacher"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="UserName Teacher"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/spinnerTeachers"
+                android:layout_width="wrap_content"
+                android:layout_height="57dp"
+                android:layout_weight="1"
+                android:height="48dp"
+                android:ems="10"
+                android:textSize="25sp"
+            />
+
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/btnUpdateCourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#0469b3"
+                    android:text="Update"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnAddCourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#0469b3"
+                    android:text="Add"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="64dp">
+
+                <Button
+                    android:id="@+id/btnBackCourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#0469b3"
+                    android:text="Back"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnDeleteCourse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#0469b3"
+                    android:text="Delete"
+                    android:textColor="@color/white" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
